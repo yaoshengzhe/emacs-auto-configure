@@ -1,0 +1,1 @@
+(load-library (concat EMACS_LIBRARY "/layout-restore/layout-restore.el"))
