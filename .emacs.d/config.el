@@ -1,17 +1,18 @@
-;;(load-library (concat EMACS_LIBRARY "/auctex/config.el"))
-;;(load-library (concat EMACS_LIBRARY "/highlight-tail/config.el"))
-;;(load-library (concat EMACS_LIBRARY "/layout-restore/config.el"))
-;;(load-library (concat EMACS_LIBRARY "/muse/config.el"))
+;;(load-library "auctex/config.el")
+;;(load-library "highlight-tail/config.el")
+;;(load-library "layout-restore/config.el")
+;;(load-library "muse/config.el")
 
 
 
 (if window-system
-    (load-library (concat EMACS_LIBRARY "/color-theme/config.el")))
+    (load-library "color-theme/config.el"))
+
 (if window-system
-    (load-library (concat EMACS_LIBRARY "/tabbar/config.el")))
+    (load-library "tabbar/config.el"))
 
-(load-library (concat EMACS_LIBRARY "/basic/config.el"))
-
-(load-library (concat EMACS_LIBRARY "/auto-complete/config.el"))
-(load-library (concat EMACS_LIBRARY "/template/config.el"))
-(load-library (concat EMACS_LIBRARY "/zencoding-mode/config.el"))
+(load-library "basic/config.el")
+(load-library "auto-complete/config.el")
+(load-library "template/config.el")
+(load-library "rainbow-mode/config.el")
+(load-library "zencoding-mode/config.el")
