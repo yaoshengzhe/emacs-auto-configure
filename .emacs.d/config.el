@@ -15,4 +15,6 @@
 (load-library "auto-complete/config.el")
 (load-library "template/config.el")
 (load-library "rainbow-mode/config.el")
+(if window-system
+    (load-library "python-mode/config.el"))
 (load-library "zencoding-mode/config.el")
