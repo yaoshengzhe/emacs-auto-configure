@@ -1,4 +1,9 @@
- (set-default-font "-apple-bitstream vera sans mono-medium-r-normal--14-120-72-72-m-120-iso10646-1")
+(set-default-font "-apple-bitstream vera sans mono-medium-r-normal--14-120-72-72-m-120-iso10646-1")
+
+(setq mac-option-key-is-meta nil)
+(setq mac-command-key-is-meta t)
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier nil)
 
 (setq visible-bell nil)
 
@@ -19,10 +24,6 @@
 
 ;; Highlight matched paren
 (show-paren-mode t)
-
-;; Disatble Toocolol Bar
-(if window-system
-    (tool-bar-mode nil))
 
 ;; Share system clipboard 
 (set-clipboard-coding-system 'ctext)
@@ -58,22 +59,6 @@
 ;;(setq ispell-program-name "aspell")
 ;;(setq ispell-list-command "list")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+;; Disatble Toocolol Bar
+(if window-system
+    (tool-bar-mode -1))

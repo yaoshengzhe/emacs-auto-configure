@@ -11,10 +11,12 @@
 (if window-system
     (load-library "tabbar/config.el"))
 
-(load-library "yasnippet/config.el")
 (load-library "basic/config.el")
+(load-library "yasnippet/config.el")
+(load-library "color-theme/config.el")
 (load-library "auto-complete/config.el")
 (load-library "template/config.el")
 (load-library "rainbow-mode/config.el")
 (load-library "scala-mode/config.el")
 (load-library "zencoding-mode/config.el")
+

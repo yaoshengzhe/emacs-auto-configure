@@ -7,12 +7,10 @@
 
 (require 'yasnippet)
 
-(setq-default ac-sources '(ac-source-yasnippet
-			   ac-source-words-in-same-mode-buffers))
+(setq-default ac-sources '(ac-source-words-in-same-mode-buffers))
 (add-hook 'emacs-lisp-mode-hook (lambda () (add-to-list 'ac-sources 'ac-source-symbols)))
 
 (add-hook 'auto-complete-mode-hook (lambda () (add-to-list 'ac-sources
-							   'ac-source-yasnippet
 							   'ac-source-filename)))
 
 (global-auto-complete-mode t)
