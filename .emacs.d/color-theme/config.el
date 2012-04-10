@@ -14,6 +14,9 @@
 (color-theme-initialize)
 
 (require 'color-theme-mac-classic)
-(color-theme-mac-classic)
+(require 'color-theme-me)
+
+;;(color-theme-mac-classic)
+(color-theme-me)
 
 

@@ -10,6 +10,7 @@
 
 (load-library "basic/config.el")
 (load-library "coffee-mode/config.el")
+(load-library "color-theme-maker/config.el")
 (load-library "yasnippet/config.el")
 (load-library "auto-complete/config.el")
 (load-library "template/config.el")
