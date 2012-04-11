@@ -208,7 +208,7 @@
      (custom-changed-face ((t (:background "blue" :foreground "white"))))
      (custom-button-pressed-face ((t (:background "lightgrey" :foreground "black" :box (:line-width 2 :style pressed-button)))))
      (custom-button-face ((t (:background "lightgrey" :foreground "black" :box (:line-width 2 :style released-button)))))
-     (cursor ((t (:background "black"))))
+     (cursor ((t (:background "red"))))
      (completions-first-difference ((t (:bold t :weight bold))))
      (completions-common-part ((t (:family "Bitstream_Vera_Sans_Mono" :foundry "apple" :width normal :weight normal :slant normal :underline nil :overline nil :strike-through nil :box nil :inverse-video nil :foreground "gainsboro" :background "grey30" :stipple nil :height 140))))
      (completions-annotations ((t (:italic t :slant italic))))
