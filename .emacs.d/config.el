@@ -18,6 +18,7 @@
 (load-library "rainbow-mode/config.el")
 (load-library "scala-mode/config.el")
 (load-library "zencoding-mode/config.el")
+(load-library "lambda-mode/config.el")
 
 
 (load-library "auto-complete+yasnippet/config.el")
