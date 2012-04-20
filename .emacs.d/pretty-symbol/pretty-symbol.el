@@ -34,44 +34,38 @@
   "Translate a symbolic name for a Unicode character -- e.g., LEFT-ARROW
  or GREATER-THAN into an actual Unicode character code. "
   (decode-char 'ucs (case name
-                      ('right-triangle #X22b3)
-                      ('left-triangle #X22b2)
-                      ('left-arrow 8592)
-                      ('up-arrow 8593)
-                      ('right-arrow 8594)
-                      ('down-arrow 8595)
-                      ('right-double-arrow 8658)
-                      ('left-double-arrow 8656)
-                      ('double-vertical-bar #X2551)
-                      ('equal #X003d)
-                      ('not-equal #X2260)
-                      ('identical #X2261)
-                      ('not-identical #X2262)
-                      ('much-less-than #X226a)
-                      ('much-greater-than #X226b)
-                      ('less-than #X003c)
-                      ('greater-than #X003e)
-                      ('less-than-or-equal-to #X2264)
-                      ('greater-than-or-equal-to #X2265)
-                      ('logical-and #X2227)
-                      ('logical-or #X2228)
-                      ('logical-neg #X00AC)
-                      ('nil #X2205)
-                      ('horizontal-ellipsis #X2026)
-                      ('double-exclamation #X203C)
-                      ('prime #X2032)
-                      ('double-prime #X2033)
-                      ('for-all #X2200)
-                      ('there-exists #X2203)
-                      ('element-of #X2208)
-                      ('square-root #X221A)
-                      ('squared #X00B2)
-                      ('cubed #X00B3)
-                      ('lambda #X03BB) ;; 
-                      ('alpha #X03B1)
-                      ('beta #X03B2)
-                      ('gamma #X03B3)
-                      ('delta #X03B4))))
+		      ('left-triangle     #x22b2)       ;; ⊲
+                      ('right-triangle    #x22b3)       ;; ⊳ 
+		      ('left-arrow        #x2190)       ;; ←
+                      ('up-arrow          #x2191)       ;; ↑               
+                      ('right-arrow       #x2192)       ;; → 
+                      ('down-arrow        #x2193)       ;; ↓             
+                      ('left-double-arrow #x21d0)       ;; ⇐
+		      ('right-fat-arrow   #x21d2)       ;; ⇒
+		      ('not-equal         #x2260)       ;; ≠
+                      ('identical         #x2261)       ;; ≡
+                      ('not-identical     #x2262)       ;; ≢
+                      ('much-less-than    #x226a)       ;; ≪
+                      ('much-greater-than #x226b)       ;; ≫
+                      ('less-or-equal     #x2264)       ;; ≤
+                      ('greater-or-equal  #x2265)       ;; ≥
+                      ('logical-and       #x2227)       ;; ∧
+                      ('logical-or        #x2228)       ;; ∨
+                      ('logical-neg       #x00ac)       ;; ¬
+                      ('nil               #x2205)       ;; ∅
+                      ('d-exclamation     #X203C)       ;; ‼
+                      ('for-all           #x2200)       ;; ∀
+                      ('there-exists      #x2203)       ;; ∃
+                      ('element-of        #x2208)       ;; ∈
+                      ('square-root       #X221A)       ;; √
+                      ('squared           #x00b2)       ;; ²
+                      ('cubed             #x00b3)       ;; ³
+                      ('lambda            #x03bb)       ;; λ 
+                      ('alpha             #x03b1)       ;; α
+                      ('beta              #x03b2)       ;; β
+                      ('gamma             #x03b3)       ;; γ
+                      ('delta             #x03b4)       ;; δ
+)))   
 
 (defun substitute-pattern-with-unicode (pattern symbol)
   "Add a font lock hook to replace the matched part of PATTERN with the
@@ -95,17 +89,19 @@ Unicode symbol SYMBOL looked up with UNICODE-SYMBOL."
   (interactive)
   (substitute-patterns-with-unicode
    (list 
-	 (cons "\\<\\(for\\)\\>" 'for-all)
-	 (cons "\\(==\\)" 'identical)
-	 (cons "\\<\\(and\\)\\>" 'logical-and)
-	 (cons "\\<\\(or\\)\\>" 'logical-or)
-	 (cons "\\<\\(sqrt\\)\\>" 'square-root)
-	 (cons "\\<\\(not\\)\\>" 'logical-neg)
-	 (cons "\\(>=\\)" 'greater-than-or-equal-to)
-	 (cons "\\(<=\\)" 'less-than-or-equal-to)
-	 (cons "\\<\\(lambda\\)\\>" 'lambda)
-	 (cons "\\<\\(in\\)\\>" 'element-of)
-	 (cons "\\<\\(None\\)\\>" 'nil)
+	 (cons "\\s-\\(for\\)\\s-"    'for-all)
+	 (cons "\\s-\\(is\\)\\s-"     'identical)
+	 (cons "\\s-\\(and\\)\\s-"    'logical-and)
+	 (cons "\\s-\\(or\\)\\s-"     'logical-or)
+	 (cons "\\<\\(math.sqrt\\)\\>"   'square-root)
+	 (cons "\\s-\\(not\\)\\s-"    'logical-neg)
+	 (cons "\\s-\\(**\\s-2\\)\\s-"          'squared)
+	 (cons "\\s-\\(**\\s-3\\)\\s-"          'cubed)
+	 (cons "\\<\\(>=\\)\\>"     'greater-or-equal)
+	 (cons "\\<\\(<=\\)\\>"     'less-or-equal)
+	 (cons "\\s-\\(lambda\\)\\s-" 'lambda)
+	 (cons "\\s-\\(in\\)\\s-"     'element-of)
+	 (cons "\\<\\(None\\)\\>"   'nil)
 )))
 
 (add-hook 'python-mode-hook 'python-unicode)
