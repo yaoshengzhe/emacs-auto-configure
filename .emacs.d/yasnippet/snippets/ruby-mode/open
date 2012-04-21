@@ -1,0 +1,4 @@
+# name: open (...)
+# key: open
+# --
+open(${1:name}, ${2:mode}) { |${3:_}| $0 }
