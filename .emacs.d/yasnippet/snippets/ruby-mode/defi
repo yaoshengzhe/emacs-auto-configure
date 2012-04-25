@@ -1,0 +1,6 @@
+# def initialize ... end
+# key: defi
+# --
+def initialize(${1:name}, ${2:options}={})
+  $0
+end

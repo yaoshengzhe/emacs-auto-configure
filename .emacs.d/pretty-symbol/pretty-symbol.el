@@ -85,6 +85,8 @@ Unicode symbol SYMBOL looked up with UNICODE-SYMBOL."
                                                (cdr x)))
           patterns))
 
+;; python-mode
+
 (defun python-unicode ()
   (interactive)
   (substitute-patterns-with-unicode
@@ -105,6 +107,27 @@ Unicode symbol SYMBOL looked up with UNICODE-SYMBOL."
 )))
 
 (add-hook 'python-mode-hook 'python-unicode)
+
+
+;; ruby-mode
+(defun ruby-unicode ()
+  (interactive)
+  (substitute-patterns-with-unicode
+   (list 
+	 (cons "\\s-\\(for\\)\\s-"    'for-all)
+	 (cons "\\s-\\(and\\)\\s-"    'logical-and)
+	 (cons "\\s-\\(or\\)\\s-"     'logical-or)
+	 (cons "\\<\\(Math.sqrt\\)\\>"   'square-root)
+	 (cons "\\s-\\(not\\)\\s-"    'logical-neg)
+	 (cons "\\<\\(>=\\)\\>"     'greater-or-equal)
+	 (cons "\\<\\(<=\\)\\>"     'less-or-equal)
+	 (cons "\\s-\\(lambda\\)\\s-" 'lambda)
+	 (cons "\\s-\\(in\\)\\s-"     'element-of)
+	 (cons "\\<\\(nil\\)\\>"   'nil)
+)))
+
+(add-hook 'ruby-mode-hook 'ruby-unicode)
+
 (provide 'pretty-symbol)
 
 (eval-when-compile
