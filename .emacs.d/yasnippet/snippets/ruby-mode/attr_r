@@ -1,0 +1,4 @@
+# attr_reader
+# key: attr_r
+# --
+attr_reader :${1:attribute}

@@ -1,0 +1,4 @@
+# attr_writer
+# key: attr_w
+# --
+attr_writer :${1:attribute}
