@@ -99,15 +99,14 @@ Unicode symbol SYMBOL looked up with UNICODE-SYMBOL."
 	 (cons "\\s-\\(not\\)\\s-"    'logical-neg)
 	 (cons "\\s-\\(**\\s-2\\)\\s-"          'squared)
 	 (cons "\\s-\\(**\\s-3\\)\\s-"          'cubed)
-	 (cons "\\<\\(>=\\)\\>"     'greater-or-equal)
-	 (cons "\\<\\(<=\\)\\>"     'less-or-equal)
+	 (cons "\\(>=\\)"     'greater-or-equal)
+	 (cons "\\(<=\\)"     'less-or-equal)
 	 (cons "\\s-\\(lambda\\)\\s-" 'lambda)
 	 (cons "\\s-\\(in\\)\\s-"     'element-of)
 	 (cons "\\<\\(None\\)\\>"   'nil)
 )))
 
 (add-hook 'python-mode-hook 'python-unicode)
-
 
 ;; ruby-mode
 (defun ruby-unicode ()
@@ -119,8 +118,8 @@ Unicode symbol SYMBOL looked up with UNICODE-SYMBOL."
 	 (cons "\\s-\\(or\\)\\s-"     'logical-or)
 	 (cons "\\<\\(Math.sqrt\\)\\>"   'square-root)
 	 (cons "\\s-\\(not\\)\\s-"    'logical-neg)
-	 (cons "\\<\\(>=\\)\\>"     'greater-or-equal)
-	 (cons "\\<\\(<=\\)\\>"     'less-or-equal)
+	 (cons "\\(>=\\)"     'greater-or-equal)
+	 (cons "\\(<=\\)"     'less-or-equal)
 	 (cons "\\s-\\(lambda\\)\\s-" 'lambda)
 	 (cons "\\s-\\(in\\)\\s-"     'element-of)
 	 (cons "\\<\\(nil\\)\\>"   'nil)
