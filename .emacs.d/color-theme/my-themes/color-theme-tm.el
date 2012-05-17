@@ -89,7 +89,7 @@
      (mmm-default-submode-face ((t (:background "#111"))))
      (mode-line ((t (:background "#e6e5e4" :foreground "black"))))
      (primary-selection ((t (:background "#222"))))
-     (region ((t (:background "#4a410d"))))
+     (region ((t (:background "#043fa5"))))
      (text-cursor ((t (:background "yellow" :foreground "black"))))
      (underline ((nil (:underline nil)))))))
 
