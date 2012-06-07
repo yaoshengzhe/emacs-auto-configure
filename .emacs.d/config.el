@@ -20,5 +20,6 @@
 (load-library "zencoding-mode/config.el")
 (load-library "pretty-symbol/config.el")
 (load-library "markdown-mode/config.el")
+(load-library "white-space/config.el")
 
 (load-library "auto-complete+yasnippet/config.el")
