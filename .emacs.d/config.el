@@ -7,6 +7,7 @@
     (progn
       (load-library "tabbar/config.el")
       ))
+(load-library "graphviz-dot-mode/config.el")
 (load-library "ruby-mode/config.el")
 (load-library "color-theme/config.el")
 (load-library "color-theme-maker/config.el")
