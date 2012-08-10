@@ -65,3 +65,5 @@
 ;; Disatble Toocolol Bar
 (if window-system
     (tool-bar-mode -1))
+
+(setq-default c-basic-offset 4)
