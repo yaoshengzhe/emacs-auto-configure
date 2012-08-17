@@ -21,7 +21,7 @@
 
 ;;; Commentary:
 
-;; 
+;;
 
 ;;; Code:
 
@@ -30,7 +30,6 @@
 
 (require 'auto-complete)
 
-
 
 ;;;; Additional sources
 
@@ -392,7 +391,7 @@
     (prefix . ac-css-prefix)
     (requires . 0)))
 
-
+
 
 ;;;; Not maintained sources
 
@@ -450,7 +449,7 @@
                         (replace-regexp-in-string "\t.*$" "" (car completion)))
                       rct-method-completion-table))))))
 
-
+
 
 ;;;; Default settings
 
