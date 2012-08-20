@@ -7,5 +7,3 @@
 (setq auto-mode-alist (cons '("\\.rake\\'" . ruby-mode) auto-mode-alist))
 ;; Show syntax highlighting when in ruby mode
 (add-hook 'ruby-mode-hook '(lambda () (font-lock-mode 1)))
-
-(setq ruby-indent-level 4)
