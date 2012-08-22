@@ -24,3 +24,4 @@
 (load-library "white-space/config.el")
 (load-library "haskell-mode/config.el")
 (load-library "auto-complete+yasnippet/config.el")
+(load-library "puppet-mode/config.el")
