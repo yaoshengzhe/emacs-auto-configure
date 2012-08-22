@@ -12,5 +12,3 @@
 (add-to-list 'interpreter-mode-alist '("ruby" . ruby-mode))
 ;; Show syntax highlighting when in ruby mode
 (add-hook 'ruby-mode-hook '(lambda () (font-lock-mode 1)))
-
-(setq ruby-indent-level 4)
