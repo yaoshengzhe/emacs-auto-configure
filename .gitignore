@@ -1,3 +1,19 @@
+*~
+*.orig
+*#
+*.info
+doc
+*history
+*NEWS
+*VERSION
+*REVISION
+*BACKUP*
+*REMOTE*
+*LOCAL*
+*BASE*
+lisp/*.elc
+
+
 .DS_Store
 
 # Ant Generated Files #
