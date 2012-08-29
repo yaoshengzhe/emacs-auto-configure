@@ -26,3 +26,5 @@
 (load-library "auto-complete+yasnippet/config.el")
 (load-library "puppet-mode/config.el")
 (load-library "ess-mode/config.el")
+(load-library "paredit/config.el")
+(load-library "clojure-mode/config.el")
