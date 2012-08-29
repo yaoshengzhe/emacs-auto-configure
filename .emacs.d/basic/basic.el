@@ -67,3 +67,5 @@
     (tool-bar-mode -1))
 
 (setq-default c-basic-offset 4)
+
+(setq-default indent-tabs-mode nil)
