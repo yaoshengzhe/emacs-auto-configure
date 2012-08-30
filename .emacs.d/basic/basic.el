@@ -50,10 +50,10 @@
 
 (setq auto-mode-alist
       (cons '("\\.h$" . c++-mode)
-	    auto-mode-alist))
+            auto-mode-alist))
 (setq auto-mode-alist
       (cons '("\\.h$" . c-mode)
-	    auto-mode-alist))
+            auto-mode-alist))
 
 
 (setq truncate-partial-width-windows nil)
@@ -69,3 +69,7 @@
 (setq-default c-basic-offset 4)
 
 (setq-default indent-tabs-mode nil)
+
+(setq auto-mode-alist
+      (cons '("\\.m$" . octave-mode)
+            auto-mode-alist))
