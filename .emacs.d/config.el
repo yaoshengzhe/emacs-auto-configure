@@ -28,3 +28,4 @@
 (load-library "ess-mode/config.el")
 (load-library "paredit/config.el")
 (load-library "clojure-mode/config.el")
+(load-library "groovy-mode/config.el")
