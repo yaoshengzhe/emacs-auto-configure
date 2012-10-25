@@ -97,8 +97,6 @@ Unicode symbol SYMBOL looked up with UNICODE-SYMBOL."
          (cons "\\s-\\(or\\)\\s-"     'logical-or)
          (cons "\\<\\(math.sqrt\\)\\>"   'square-root)
          (cons "\\s-\\(not\\)\\s-"    'logical-neg)
-         (cons "\\s-\\(**\\s-2\\)\\s-"          'squared)
-         (cons "\\s-\\(**\\s-3\\)\\s-"          'cubed)
          (cons "\\(>=\\)"     'greater-or-equal)
          (cons "\\(<=\\)"     'less-or-equal)
          (cons "\\s-\\(lambda\\)\\s-" 'lambda)
