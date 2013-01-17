@@ -27,6 +27,8 @@
 (load-library "puppet-mode/config.el")
 (load-library "ess-mode/config.el")
 (load-library "paredit/config.el")
+(load-library "js2-mode/config.el")
+
+;; following modules will be loaded as needed (aka lazy)
 (load-library "clojure-mode/config.el")
 (load-library "groovy-mode/config.el")
-(load-library "js2-mode/config.el")

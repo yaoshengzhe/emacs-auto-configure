@@ -1,5 +1,4 @@
 (add-to-list 'load-path "~/.emacs.d/groovy-mode")
-(load "groovy-mode/groovy-mode")
 
 ;; turn on syntax highlighting
 (global-font-lock-mode 1)
