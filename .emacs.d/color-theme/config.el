@@ -16,7 +16,7 @@
 (require 'color-theme-mac-classic)
 (require 'color-theme-me)
 (require 'color-theme-tm)
-(require 'color-theme-hober2)
+(require 'color-theme-syao)
 
 (color-theme-tm)
 

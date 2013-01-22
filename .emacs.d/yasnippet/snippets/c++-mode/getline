@@ -1,0 +1,4 @@
+# name: getline ... { ... }
+# key: getline
+# --
+getline(cin, str)

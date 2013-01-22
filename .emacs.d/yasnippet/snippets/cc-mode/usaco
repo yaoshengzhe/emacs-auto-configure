@@ -1,0 +1,21 @@
+# name: usaco
+# key: usaco
+# --
+/*
+ID: yaoshen2
+LANG: C++
+TASK: `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`
+*/
+
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main(int argc, char *argv[]) {
+    ifstream fin("`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`.in");
+    ofstream fout("`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`.out");
+    $0
+    return 0;
+}
