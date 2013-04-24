@@ -4,6 +4,5 @@
           '(lambda ()
              (yas/minor-mode-on)))
 
-(setq yas/my-directory "~/.emacs.d/scala-mode/contrib/yasnippet/snippets")
-
-(yas/load-directory yas/my-directory)
+;; (setq yas/my-directory "~/.emacs.d/scala-mode/contrib/yasnippet/snippets")
+;; (yas/load-directory yas/my-directory)
