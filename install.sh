@@ -6,11 +6,14 @@ cp -rf .templates ~
 mkdir bin
 echo -e '#! /bin/bash\nexec emacsclient --alternate-editor="" -t -a -c "$@"' > bin/e
 echo -e '#! /bin/bash\nemacsclient -e "(kill-emacs)"' > bin/ekill
-echo -e '#! /bin/bash\nekill\nemacs --daemon' > bin/estart
+echo -e '#! /bin/bash\nemacs --daemon' > bin/estart
+echo -e '#! /bin/bash\nekill\nestart' > bin/erestart
 
-sudo chmod +x bin/e
-sudo chmod +x bin/estart
-sudo chmod +x bin/ekill
+chmod +x bin/e
+chmod +x bin/estart
+chmod +x bin/erestart
+chmod +x bin/ekill
 
-sudo cp bin/* /bin/
+mv bin/* /usr/local/bin
+rm -rf bin
 
