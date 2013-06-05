@@ -3,7 +3,7 @@
 cp -rf .emacs.d ~
 cp -rf .templates ~
 
-mkdir bin
+mkdir bin > /dev/null
 echo -e '#! /bin/bash\nexec emacsclient --alternate-editor="" -t -a -c "$@"' > bin/e
 echo -e '#! /bin/bash\nemacsclient -e "(kill-emacs)"' > bin/ekill
 echo -e '#! /bin/bash\nemacs --daemon' > bin/estart
