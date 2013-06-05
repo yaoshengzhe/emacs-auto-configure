@@ -59,6 +59,7 @@
      (font-lock-type-face ((t (:foreground "#c5af75"))))
      (font-lock-variable-name-face ((t (:foreground "#3387cc"))))
      (font-lock-warning-face ((t (:bold t :background "#420e09" :foreground "#eeeeee"))))
+     (haskell-keyword-where-face ((t (:bold t :foreground "#95E454"))))
      (erc-current-nick-face ((t (:foreground "#aeaeae"))))
      (erc-default-face ((t (:foreground "#ddd"))))
      (erc-keyword-face ((t (:foreground "#cf6a4c"))))

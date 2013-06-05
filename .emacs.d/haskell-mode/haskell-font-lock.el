@@ -182,6 +182,7 @@ This is the case if the \".\" is part of a \"forall <tvar> . <type>\"."
 ;; Use new vars for the font-lock faces.  The indirection allows people to
 ;; use different faces than in other modes, as before.
 (defvar haskell-keyword-face 'font-lock-keyword-face)
+(defvar haskell-keyword-where-face 'haskell-keyword-where-face)
 (defvar haskell-constructor-face 'font-lock-type-face)
 ;; This used to be `font-lock-variable-name-face' but it doesn't result in
 ;; a highlighting that's consistent with other modes (it's mostly used
@@ -302,8 +303,13 @@ Returns keywords suitable for `font-lock-keywords'."
 		  ;;    "else" "if" "import" "in" "infix" "infixl"
                   ;;    "infixr" "instance" "let" "module" "newtype" "of"
                   ;;    "then" "type" "where" "_") t)
-		  "\\(_\\|c\\(ase\\|lass\\)\\|d\\(ata\\|e\\(fault\\|riving\\)\\|o\\)\\|else\\|i\\(mport\\|n\\(fix[lr]?\\|stance\\)\\|[fn]\\)\\|let\\|module\\|mdo\\|newtype\\|of\\|rec\\|proc\\|t\\(hen\\|ype\\)\\|where\\)"
+		  "\\(_\\|c\\(ase\\|lass\\)\\|d\\(ata\\|e\\(fault\\|riving\\)\\|o\\)\\|else\\|i\\(mport\\|n\\(fix[lr]?\\|stance\\)\\|[fn]\\)\\|let\\|module\\|mdo\\|newtype\\|of\\|rec\\|proc\\|t\\(hen\\|ype\\)\\)"
 		  "\\>"))
+
+	 (reservedwhere
+          (concat "\\<"
+                  "\\(where\\)"
+                  "\\>"))
 
          ;; This unreadable regexp matches strings and character
          ;; constants.  We need to do this with one regexp to handle
@@ -347,8 +353,8 @@ Returns keywords suitable for `font-lock-keywords'."
             ;; be "randomly" dropped.  Moving it earlier seemed to reduce
             ;; the occurrence of the bug.
 	    ,@(haskell-font-lock-symbols-keywords)
-
 	    (,reservedid 1 (symbol-value 'haskell-keyword-face))
+            (,reservedwhere 1 (symbol-value 'haskell-keyword-where-face))
 	    (,reservedsym 1 (symbol-value 'haskell-operator-face))
             ;; Special case for `as', `hiding', `safe' and `qualified', which are
             ;; keywords in import statements but are not otherwise reserved.
