@@ -19,9 +19,11 @@
 
 (load-library "auto-complete/config.el")
 (load-library "basic/config.el")
+(load-library "cedet/config.el")
 (load-library "clojure-mode/config.el")
 (load-library "coffee-mode/config.el")
 (load-library "color-theme/config.el")
+(load-library "ecb/config.el")
 (load-library "erlang-mode/config.el")
 (load-library "ess-mode/config.el")
 (load-library "go-mode/config.el")
