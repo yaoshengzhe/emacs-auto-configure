@@ -1,4 +1,4 @@
-(load-library (concat EMACS_LIBRARY "/basic/basic.el"))
+(load-library "basic/basic.el")
 
 ;; Add XeLaTeX support
 (add-hook 'LaTeX-mode-hook 

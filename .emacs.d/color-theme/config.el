@@ -1,14 +1,7 @@
-(setq load-path (append load-path (list (concat EMACS_LIBRARY "/color-theme"))))
-
-(setq load-path (append load-path 
-			(list 
-			 (concat EMACS_LIBRARY "/color-theme/themes/"))))
-
-(setq load-path (append load-path 
-			(list 
-			 (concat EMACS_LIBRARY "/color-theme/my-themes"))))
-
-(load-library (concat EMACS_LIBRARY "/color-theme/color-theme.el"))
+(add-to-list 'load-path "~/.emacs.d/color-theme")
+(add-to-list 'load-path "~/.emacs.d/color-theme/themes")
+(add-to-list 'load-path "~/.emacs.d/color-theme/my-themes")
+(load-library "color-theme/color-theme.el")
 
 (require 'color-theme)
 (color-theme-initialize)
