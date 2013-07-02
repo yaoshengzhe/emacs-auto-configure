@@ -4,3 +4,6 @@
 (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
 (defun turn-on-paredit () (paredit-mode 1))
 (add-hook 'clojure-mode-hook 'turn-on-paredit)
+(add-hook 'clojure-mode-hook
+          (lambda ()
+            (setq inferior-lisp-program "lein repl")))
