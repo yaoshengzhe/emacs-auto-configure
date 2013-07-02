@@ -32,7 +32,6 @@
 (load-library "haskell-mode/config.el")
 (load-library "js2-mode/config.el")
 (load-library "markdown-mode/config.el")
-(load-library "paredit/config.el")
 (load-library "pretty-symbol/config.el")
 (load-library "protobuf-mode/config.el")
 (load-library "puppet-mode/config.el")
