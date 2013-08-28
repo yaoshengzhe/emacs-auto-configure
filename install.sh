@@ -17,4 +17,3 @@ chmod +x bin/ekill
 
 mv bin/* /usr/local/bin
 rm -rf bin
-erestart
