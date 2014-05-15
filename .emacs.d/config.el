@@ -40,6 +40,7 @@
 (load-library "scala-mode/config.el")
 (load-library "template/config.el")
 (load-library "white-space/config.el")
+(load-library "yaml-mode/config.el")
 (load-library "yasnippet/config.el")
 (load-library "zencoding-mode/config.el")
 
