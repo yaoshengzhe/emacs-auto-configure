@@ -47,3 +47,4 @@
 ;; plug-ins
 (load-library "auto-complete+yasnippet/config.el")
 (load-library "color-theme-maker/config.el")
+(load-library "go-autocomplete/config.el")
