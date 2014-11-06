@@ -26,6 +26,7 @@
 ;;(load-library "ecb/config.el")
 (load-library "erlang-mode/config.el")
 (load-library "ess-mode/config.el")
+(load-library "git-mode/config.el")
 (load-library "go-mode/config.el")
 (load-library "graphviz-dot-mode/config.el")
 (load-library "groovy-mode/config.el")
