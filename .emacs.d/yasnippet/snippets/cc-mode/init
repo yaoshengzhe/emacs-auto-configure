@@ -1,10 +1,28 @@
 # name: init
 # key: init
 # --
+#define __STDC_FORMAT_MACROS
+
+#include <inttypes.h>
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <math.h>
+
+#include <algorithm>
+#include <map>
+#include <set>
+#include <vector>
+
+using namespace std;
+
+void readInt64(int64_t *v) {
+     scanf("%"SCNd64, v);
+}
+
+void printInt64(int64_t v) {
+     printf("%"PRId64, v);
+}
 
 int main(int argc, char *argv[]) {
     $0
