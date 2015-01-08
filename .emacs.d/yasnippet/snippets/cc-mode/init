@@ -19,6 +19,7 @@ using namespace std;
 #define VAR(V,init) __typeof(init) V=(init)
 #define FOREACH(I,C) for(VAR(I,(C).begin());I!=(C).end();I++)
 #define foreach(I, C) FOREACH(I,C)
+#define FOR(I, S, E) for(__typeof(S) I=(S); I < (E); ++I)
 
 void readInt64(int64_t *v) {
      scanf("%"SCNd64, v);
