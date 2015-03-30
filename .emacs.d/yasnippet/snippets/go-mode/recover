@@ -1,0 +1,6 @@
+# name: recover
+# key: recover
+# --
+if err := recover(); err != nil {
+   $0
+}
