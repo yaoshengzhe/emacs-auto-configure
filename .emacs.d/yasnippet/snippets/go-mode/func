@@ -1,6 +1,6 @@
 # name: func () ... { ... }
 # key: func
 # --
-func (${1:name} *${2:struct}) () {
+func (${1:Name} *${2:Struct}) () {
     $0
 }
