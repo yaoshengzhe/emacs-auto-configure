@@ -41,6 +41,7 @@
 (load-library "rainbow-mode/config.el")
 (load-library "ruby-mode/config.el")
 (load-library "scala-mode/config.el")
+(load-library "slime/config.el")
 (load-library "template/config.el")
 (load-library "yaml-mode/config.el")
 (load-library "yasnippet/config.el")
