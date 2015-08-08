@@ -20,5 +20,6 @@ mv bin/* /usr/local/bin
 rm -rf bin
 
 if [ -f `which go` ]; then
-   go get golang.org/x/tools/cmd/oracle
+    go get golang.org/x/tools/cmd/oracle
+    mv $GOPATH/bin/oracle $GOROOT/bin/
 fi
