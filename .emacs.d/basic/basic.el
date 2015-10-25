@@ -48,14 +48,6 @@
 ;; 80 column per line
 (setq fill-column 80)
 
-(setq auto-mode-alist
-      (cons '("\\.h$" . c++-mode)
-            auto-mode-alist))
-(setq auto-mode-alist
-      (cons '("\\.h$" . c-mode)
-            auto-mode-alist))
-
-
 (setq truncate-partial-width-windows nil)
 (setq overflow-newline-into-fringe t)
 
@@ -65,8 +57,6 @@
 ;; Disatble Toocolol Bar
 (if window-system
     (tool-bar-mode -1))
-
-(setq-default c-basic-offset 4)
 
 (setq-default indent-tabs-mode nil)
 

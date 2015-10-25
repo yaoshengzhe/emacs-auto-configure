@@ -19,6 +19,7 @@
 
 (load-library "auto-complete/config.el")
 (load-library "basic/config.el")
+(load-library "cc-mode/config.el")
 ;;(load-library "cedet/config.el")
 (load-library "clojure-mode/config.el")
 (load-library "coffee-mode/config.el")
