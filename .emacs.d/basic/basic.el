@@ -1,5 +1,3 @@
-(set-default-font "-apple-bitstream vera sans mono-medium-r-normal--14-120-72-72-m-120-iso10646-1")
-
 (if (string-equal "darwin" (symbol-name system-type))
     (setenv "PATH" (concat "/usr/local/bin:/opt/local/bin:" (getenv "PATH"))))
 
